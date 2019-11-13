@@ -1,0 +1,694 @@
+/* body */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Varela Round', sans-serif;
+    box-sizing: border-box;
+}
+
+a {
+    text-decoration: none;  
+    cursor: pointer;    /*to remove default styles of anchor tags*/
+}
+
+p {
+    cursor: default;  /* self explanatory :) */
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-color:#0C1027;
+    color: white;
+}
+img{
+border-radius: 2%;
+}
+
+/* -------------------Nav-------------------- */
+.nav-container {
+    position: fixed;
+    z-index: 2;
+    width: 100%;
+    
+}
+.fixed-position-filler {
+    width: 100%;
+    z-index: 2;
+    height: 90px;
+    background-color: #0C1027;
+    overflow: hidden ;
+}
+
+.menu {
+    /* display: none; */
+}
+
+
+
+nav {
+    /* overflow: hidden; */
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    height: 90px;
+    margin: 0 auto;
+    align-items: center;
+    /* top: 10px; */
+    z-index: 2;
+    background-color: #0C1027;
+    overflow: hidden;
+}
+
+nav>div {
+    margin: 0 20px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+}
+.logo-container img{
+    width: 160px;
+}
+.flex-2 {
+    flex: 2;
+    text-align: center;
+}
+
+.search-box-container {
+    position: relative;
+}
+
+.search-box-search {
+    position: absolute;
+    top: 8px;
+    left: 5px;
+    color: rgb(197, 195, 195);
+}
+
+.search-box-text {
+    position: absolute;
+    top: 6px;
+    left: 50px;
+    color: rgb(197, 195, 195);
+    font-size: 0.95rem;
+}
+
+.search-box-mic {
+    position: absolute;
+    top: 8px;
+    right: 5px;
+    color: rgb(197, 195, 195);
+}
+
+.search-box{
+    background-color: #12193E;
+    border: 0;
+    height: 1.8rem;
+    width: 300px;
+    border-radius: 10px;
+}
+
+.logo {
+    width: 70px;
+    margin-top: 15px;
+}
+
+.my-photo img {
+    width: 40px;
+    border-radius: 50%;
+    margin-top: 8px;
+}
+
+.notification-bell{
+    position: relative;
+    transition: .2s;
+    animation: shake 4s infinite 3s;
+}
+
+@keyframes shake {
+    0%{
+        transform: rotate(0deg);
+    }
+    5%{
+        transform: rotate(-15deg);
+    }
+    10% {
+        transform: rotate(15deg);
+    }
+    15%{
+        transform: rotate(-15deg);
+    }
+    20% {
+        transform: rotate(15deg);
+    }
+    25%{
+        transform: rotate(-15deg);
+    }
+    30% {
+        transform: rotate(15deg);
+    }
+    35%{
+        transform: rotate(-15deg);
+    }
+    40% {
+        transform: rotate(15deg);
+    }
+    45%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(0deg);
+    }
+}
+
+
+.red-circle{
+    position: absolute;
+    width: 6px;
+    height: 6px;
+    bottom: 2px;
+    right: 0px;
+    border-radius: 50px;
+    background-color: red;
+   
+}
+
+/* ------------------container-------------- */
+.container {
+    width: 85%;
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    flex-wrap: wrap;
+
+    /* justify-content: space-between; */
+}
+
+/* -------------main----------- */
+
+main {
+    width: 70%;
+    height: 79vh;
+    margin: auto;
+    position: absolute;
+    overflow-y: scroll;
+}
+main::-webkit-scrollbar { 
+    width: 0 !important }
+
+.artist-container{
+    width: 100%;
+    height: px;
+    display: flex;
+    /* flex-wrap: wrap; */
+    background-color: #141B41;
+}
+
+.artist-image{
+    width: 34%;
+    height: 100%;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden
+}
+.artist-image img{
+    width: 100%;
+    border-radius: 0;
+}
+
+.artist-info{
+    width: 66.6%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin: 0 15px;
+    position: relative;
+}
+.artist-info h3 {
+    margin: 10px 0;
+}
+.artist-info .name{
+    font-size: 0.9rem;
+    margin-bottom: 10px;
+}
+.artist-info p {
+    color: #C5C3C3;
+}
+.artist-info::after { /* adding the follower count */
+    content: '851 Followers';
+    position: absolute;
+    top: 7%;
+    right: 10%;
+    color: #C5C3C3;
+    font-size: 0.75rem;
+}
+
+
+.main-info, .action-buttons {
+    margin: px;
+}
+.main-info {
+    font-size: 0.9rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    /* height: 50%; */
+}
+
+.action-buttons {
+    display: flex;
+    height: 30%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 50%;
+    position: relative;
+}
+.action-buttons button {
+    width: 30%;
+    height: 40px;
+    background: linear-gradient(to right, #3524AF, #C248DF);
+    color: white;
+    border: 0;
+    font-weight: 500;
+    font-size: 1.1rem;
+    border-radius: 3%;
+    cursor: pointer;
+}
+.action-buttons p {
+    font-size: 0.85rem; 
+}
+
+#follow {
+    position: absolute;
+    top: 20%;
+    right: 40%;
+    font-size: 1.1rem;
+    color: white;
+    animation: slideIn 1s;
+}
+/*---------*/
+
+
+/*-------------song list----------*/
+
+.song-list {
+    margin: 15px 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.song-list-item {
+    margin: 5px 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 10px 0;
+    background-color: #1A1E33;
+    align-items: center;
+    color: #C5C3C3;
+}
+.song-list-item img{
+    width: 40px;
+    height: 40px;
+    border: 1px solid #C5C3C3;
+    box-shadow: 0px 0px 5px #C5C3C3;
+}
+.song-list-item-info{ /* to have extra space between song info and heart icon*/
+    width: 70%;
+}
+.song-list-item-info :nth-child(1){
+    color: white;
+}
+.song-list-item-info :nth-child(2){
+    font-size: 0.85rem;
+}
+
+
+/* --------------------aside-------------------  */
+aside {
+    position: absolute;
+    right: 10px;
+    width: 25%;
+    height: 78vh;
+    margin: auto;
+    overflow-y: scroll;
+}
+aside::-webkit-scrollbar { 
+    width: 0 !important }
+
+/* -----------------similar artist---------------- */
+.similar-artist {
+    position: absolute;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.similar-artist-heading {
+    background-color: #0C1027;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    animation: enlarge 1s;
+}
+.similar-artist-heading h3{
+    font-size: 1.15rem;
+}
+.similar-artist-heading p{
+    color: #C5C3C3;
+    font-size: 0.75rem;
+}
+
+.similar-artist-item{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    color: #C5C3C3;
+    font-size: 0.75rem;
+    margin-bottom: 10px;
+}
+
+.similar-artist-image{
+    flex-shrink: 0;
+    width: 85px;
+}
+.similar-artist-image img{
+    width: 100%;
+    border: 1px solid #C5C3C3;
+    box-shadow: 0px 0px 5px #C5C3C3;
+}
+
+.similar-artist-info{
+    width: 60%;
+    margin-left: 7%;
+}
+.similar-artist-info :nth-child(1){
+    color: white;
+    font-size: 0.85rem;
+    margin-bottom: 3%;
+}
+.similar-artist-info :nth-child(2){
+    font-size: 0.7rem;
+}
+
+.similar-artist-dropdown{
+    align-self: flex-start;
+    margin-top: 1%;
+    font-size: 0.7rem;
+}
+.similar-artist-dropdown :nth-child(1){
+    font-size: 0.75rem;
+    text-align: center;
+    word-spacing: 0.2px;
+}
+
+/* --------recently played----------- */
+.recently-played {
+    position: absolute;
+    width: 100%;
+    top: 350px;
+} /* all the other similar artist section classes are used */
+
+
+
+
+/* ---------footer---------------- */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    height: 55px;
+    width: 100%;
+    background-color: #282828;
+    color: #C5C3C3;
+    font-size: 0.8rem;
+    z-index: 2;
+    display: flex;
+    justify-content: space-around;
+}
+
+
+/* footer image section */
+.footer-image{
+    width: 17%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer-image img{
+    width: 45px;
+    margin-top: 4px;
+}
+.footer-image-text :nth-child(1){
+    font-size: 0.9rem;
+    color: white;
+    margin-bottom: 3px;
+}
+.footer-image-icons{
+    display: flex;
+    margin-bottom: 15px;  
+}
+.footer-image-icons i{
+    margin: 0 5px;
+}
+
+/* footer slider section */
+
+.footer-slider{
+    width: 30%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-slider-controls{
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: auto;
+    padding-top: 3px;
+    font-size: 0.9rem;
+}
+.footer-slider-controls :nth-child(3) {
+    position: relative;
+}
+.footer-slider-controls :nth-child(3)::after{ /*adding the round shape on pause icon*/
+    content: " ";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+     width: 22px;
+    height: 22px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.footer-slider-sliderbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/* input range */
+input[type=range] {
+  height: 19px;
+  -webkit-appearance: none;
+  margin: 10px 0;
+  width: 80%;
+  height: 1px;
+  background-color: inherit;
+}
+input[type=range]:focus {
+  outline: none;
+}
+input[type=range]::-webkit-slider-runnable-track {
+  width: 100%;
+  height: 4px;
+  cursor: pointer;
+  box-shadow: 0px 0px 0px #000000;
+  background: #404040;
+  border-radius: 50px;
+  border: 0px solid #000000;
+}
+input[type=range]::-webkit-slider-thumb {
+  box-shadow: 0px 0px 2px #000000;
+  border: 1px solid #000000;
+  height: 12px;
+  width: 12px;
+  border-radius: 50px;
+  background: #FFFFFF;
+  cursor: pointer;
+  -webkit-appearance: none;
+  margin-top: -4.5px;
+}
+
+
+/* footer volume controls section */
+
+.footer-volume{
+    width: 17%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.footer-volume div{
+    width: 45%;
+}
+.footer-volume input[type=range] {
+    width: 100%;
+}
+.footer-volume :nth-child(5){
+    transform: rotate(-45deg);
+}
+
+/* page load animations */
+
+.fromBottom1000 {
+    animation: fromBottom1 .75s;
+}
+.fromBottom500 {
+    animation: fromBottom2 .75s;
+}
+.fromBottom250{
+    animation: fromBottom3 .75s;
+}
+
+.similar-artist-dropdown {
+    animation: dropdownAnimation .75s;
+}
+
+.slideIn {
+    animation: slideIn .75s;
+}
+.slideIn2{
+    animation: slideIn2 .75s; 
+}
+.slideIn3 {
+    animation: slideIn3 .75s;
+}
+
+.action-buttons button{
+    animation: fromBottomRight .75s;
+}
+.action-buttons p{
+    animation: fromRight .75s;
+}
+
+.main-info h3{
+    animation: opacity0to1 2s ease-in-out;
+}
+.main-info :nth-child(3){
+    animation: fromTop1 .75s;
+}
+.main-info :nth-child(2){
+    animation: fromBottom1 .75s;
+}
+
+.artist-container{
+    animation: enlarge 0.5s ease-out;
+}
+
+.logo-container {
+    animation: fromRight .75s;
+}
+
+.my-photo {
+    animation: fromLeft .75s;
+}
+
+/* ---------media queries */
+
+@media screen and (max-width: 900px) {
+    .fixed-position-filler {
+        height: 140px;
+    }
+    nav {
+        height: 140px;
+    }
+    .flex-2{
+        flex: 1;
+        flex-shrink: 2;
+    }
+    .notification-bell{
+        /* display: none; */
+    }
+
+    .artist-container{
+        flex-wrap: wrap;
+    }
+    .artist-image {
+        width: 60%;
+    }
+    .artist-info {
+        width: 100%;
+        height: 300px;
+    }
+
+    .song-list-item-info{
+        width: auto;
+    }
+    .song-list-item-info p{
+        max-width: 100px;
+    }
+
+    .similar-artist-item {
+        flex-wrap: wrap;
+        margin-bottom: 20px;
+    }
+    .similar-artist-image{
+        margin: auto;
+    }
+
+    .recently-played {
+        top: 500px;
+    }
+
+    /* fotter */
+    .footer-image{
+        width: 28%;
+    }
+    .footer-image-icons{
+        flex-direction: column;
+        justify-content: space-around;
+        height: 80%;
+        margin-bottom: 0;
+    }
+    .footer-image-text{
+        font-size: 0.6rem;
+    }
+
+    .footer-slider{
+        width: 28%;
+    }
+    .footer-slider-controls{
+        width: 100%;
+    }
+
+    .footer-volume{
+        width: 28%;
+    }
+}
+
+@media screen and (max-width:550px){
+    .notification-bell{
+        display:none;
+    }
+}
+
+@media screen and (max-width:900px)

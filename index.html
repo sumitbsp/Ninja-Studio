@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ninja Studio</title>
+    <!-- <script src="https://kit.fontawesome.com/3e3496df42.js" crossorigin="anonymous"></script> -->
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="animations.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="nav-container">
+    <nav>
+        <div class="logo-container">
+            <a href=""><img src="images/logo2.png" alt=""></a>
+        </div>   
+        <div class="flex-2">
+            <P>Favourite</P>
+        </div>
+        <div class="search-box-container">
+            <input class="search-box" type="text">
+            <i class="fas fa-search fa-lg search-box-search"></i>
+            <span class="search-box-text">Search</span>
+            <i class="fas fa-microphone fa-lg search-box-mic"></i>
+        </div>
+        <div class="notification-bell">
+                <i class="fas fa-bell fa-lg"></i>
+                <div class="red-circle"></div>
+        </div>
+        <div class="my-photo">
+            <img src="images/myphoto.jpg" alt="">
+            
+        </div>
+    </nav>
+    </div>
+    <div class="fixed-position-filler"></div>
+    <div class="container">
+        <main>
+                <!-- carousel container -->
+            <div class="carousel-container">
+                <div class="image-container carousel1 slideIn">
+                    <a href=""><img src="images/hero-image2.jpg" alt=""></a>
+                </div>
+                <div class="image-container slideIn2">
+                    <a href=""><img src="images/hero-image3.jpg" alt=""></a>
+                </div>
+                <div class="image-container slideIn3">
+                    <a href=""><img src="images/hero-image1.jpg" alt=""></a>
+                </div>
+            </div>
+                <!-- latest release -->
+            <div class="latest-release-container">
+                <div>
+                    <h3 class="section-heading">Latest Releases</h3>
+                </div>
+                <div class="all-release-container">
+                    <div class="release-container fromRight">
+                        <div class="release-image">
+                            <a href="#footer"><img src="images/albumart2.jpg" alt=""></a>
+                            <a href=""><i class="fas fa-play play-icon"></i></a>
+                        </div>
+                        <div class="release-details">
+                            <a href=""><p>Los Angeles</p></a>
+                            <p>AUG 11 2017</p>
+                        </div>
+                        <div class="release-dropdown">
+                            <input type="checkbox" id="release-checkbox">
+                            <label for="release-checkbox">&bull; &bull; &bull;</label>
+                            <p>4:44</p>
+                            <div class="latest-release-dropdown">
+                                <div class="drop-menu">
+                                    <i class="fas fa-play"></i>
+                                    <p>PLay</p>
+                                </div>
+                                <div class="hr-line"></div>
+                                <div class="drop-menu">
+                                    <i class="fas fa-plus"></i>
+                                    <p>Add To Queue</p>
+                                </div>
+                                <div class="hr-line"></div>
+                                <div class="drop-menu">
+                                    <i class="fas fa-list"></i>
+                                    <p>Add To Playlist</p>
+                                </div>
+                                <div class="hr-line"></div>
+                                <div class="drop-menu">
+                                    <i class="fas fa-info-circle"></i>
+                                    <p>Get Info</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="release-container fromLeft">
+                        <div class="release-image">
+                            <a href="#footer"><img src="images/albumart3.jpg" alt=""></a>
+                            <a href=""><i class="fas fa-play play-icon"></i></a>
+                        </div>
+                        <div class="release-details">
+                            <a href=""><p>Over You</p></a>
+                            <p>SEP 08 2017</p>
+                        </div>
+                        <div class="release-dropdown">
+                            <input type="checkbox" id="release-checkbox2">
+                            <label for="release-checkbox2">&bull; &bull; &bull;</label>
+                            <p>4:44</p>
+                            <div class="latest-release-dropdown">
+                                <div class="drop-menu">
+                                    <i class="fas fa-play"></i>
+                                    <p>PLay</p>
+                                </div>
+                                <div class="hr-line"></div>
+                                <div class="drop-menu">
+                                    <i class="fas fa-plus"></i>
+                                    <p>Add To Queue</p>
+                                </div>
+                                <div class="hr-line"></div>
+                                <div class="drop-menu">
+                                    <i class="fas fa-list"></i>
+                                    <p>Add To Playlist</p>
+                                </div>
+                                <div class="hr-line"></div>
+                                <div class="drop-menu">
+                                    <i class="fas fa-info-circle"></i>
+                                    <p>Get Info</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="release-container fromRight">
+                        <div class="release-image">
+                            <a href="#footer"><img src="images/albumart5.jpg" alt=""></a>
+                            <a href=""><i class="fas fa-play play-icon"></i></a>
+                        </div>
+                        <div class="release-details">
+                            <a href=""><p>Never Be The Same</p></a>
+                            <p>SEP 08 2017</p>
+                        </div>
+                        <div class="release-dropdown">
+                            <input type="checkbox" id="release-checkbox3">
+                            <label for="release-checkbox3">&bull; &bull; &bull;</label>
+                            <p>4:44</p>
+                            <div class="latest-release-dropdown">
+                                <div class="drop-menu">
+                                    <i class="fas fa-play"></i>
+                                    <p>PLay</p>
+                                </div>
+                                <div class="hr-line"></div>
+                                <div class="drop-menu">
+                                    <i class="fas fa-plus"></i>
+                                    <p>Add To Queue</p>
+                                </div>
+                                <div class="hr-line"></div>
+                                <div class="drop-menu">
+                                    <i class="fas fa-list"></i>
+                                    <p>Add To Playlist</p>
+                                </div>
+                                <div class="hr-line"></div>
+                                <div class="drop-menu">
+                                    <i class="fas fa-info-circle"></i>
+                                    <p>Get Info</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="release-container fromLeft">
+                        <div class="release-image">
+                            <a href="#footer"><img src="images/albumart1.jpg" alt=""></a>
+                            <a href=""><i class="fas fa-play play-icon"></i></a>
+                        </div>
+                        <div class="release-details">
+                            <a href=""><p>Rings And Roses</p></a>
+                            <p>SEP 08 2017</p>
+                        </div>
+                        <div class="release-dropdown">
+                            <input type="checkbox" id="release-checkbox4">
+                            <label for="release-checkbox4">&bull; &bull; &bull;</label>
+                            <p>4:44</p>
+                            <div class="latest-release-dropdown">
+                                <div class="drop-menu">
+                                    <i class="fas fa-play"></i>
+                                    <p>PLay</p>
+                                </div>
+                                <div class="hr-line"></div>
+                                <div class="drop-menu">
+                                    <i class="fas fa-plus"></i>
+                                    <p>Add To Queue</p>
+                                </div>
+                                <div class="hr-line"></div>
+                                <div class="drop-menu">
+                                    <i class="fas fa-list"></i>
+                                    <p>Add To Playlist</p>
+                                </div>
+                                <div class="hr-line"></div>
+                                <div class="drop-menu">
+                                    <i class="fas fa-info-circle"></i>
+                                    <p>Get Info</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- popular artist section -->
+            <div class="popular-artist-container">
+                <div>
+                    <h3 class="section-heading">Popular Artist</h3>
+                </div>
+                <div class="artist-container">
+                    <div class="artist-image-container">
+                        <div class="artist-image">
+                            <a href="artist.html"><img src="images/selena-gomez.jpg" alt=""></a>
+                            <a href=""><i class="fas fa-play play-icon"></i></a>
+                        </div>
+                        <p>Selena Gomez</p>
+                    </div>
+                    <div class="artist-image-container">
+                        <div class="artist-image">
+                            <a href="artist.html"><img src="images/maroon5.jpg" alt=""></a>
+                            <a href=""><i class="fas fa-play play-icon"></i></a>
+                        </div>
+                        <p>Maroon 5</p>
+                    </div>
+                    <div class="artist-image-container">
+                        <div class="artist-image">
+                            <a href="artist.html"><img src="images/halsey.jpg" alt=""></a>
+                            <a href=""><i class="fas fa-play play-icon"></i></a>
+                        </div>
+                        <p>Halsey</p>
+                    </div>
+                    <div class="artist-image-container">
+                        <div class="artist-image">
+                            <a href="artist.html"><img src="images/imagine-dragons.jpg" alt=""></a>
+                            <a href=""><i class="fas fa-play play-icon"></i></a>
+                        </div>
+                        <p>Imagine Dragons</p>
+                    </div>
+                    <div class="artist-image-container">
+                        <div class="artist-image">
+                            <a href="artist.html"><img src="images/charlie-puth.jpg" alt=""></a>
+                            <a href=""><i class="fas fa-play play-icon"></i></a>
+                        </div>
+                        <p>Charlie Puth</p>
+                    </div>
+                    <div class="artist-image-container">
+                        <div class="artist-image">
+                            <a href="artist.html"><img src="images/bruno-mars.jpg" alt=""></a>
+                            <a href=""><i class="fas fa-play play-icon"></i></a>
+                        </div>
+                        <p>Bruno Mars</p>
+                    </div>
+                </div>
+
+                <!-- music type -->
+
+                <div class="music-type-container">
+                    <div class="music-type">
+                        <div class="stations">
+                            <div class="pos3"></div>
+                            <div class="pos2"></div>
+                            <div class="pos1">
+                                <i class="fas fa-compact-disc"></i>
+                                <p>Stations</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="music-type round">
+                        <a href=""><img src="images/love.jpg" alt=""></a>
+                        <a href=""><p>Love</p></a>
+                        <div class="overlay"></div>
+                    </div>
+                    <div class="music-type round">
+                        <a href=""><img src="images/retro.jpg" alt=""></a>
+                        <div class="overlay"></div>
+                        <a href=""><p>Retro</p></a>
+                    </div>
+                    <div class="music-type round">
+                        <a href=""><img src="images/chill.jpg" alt=""></a>
+                        <div class="overlay"></div>
+                        <a href=""><p>Chill</p></a>
+                    </div>
+                    <div class="music-type round">
+                        <a href=""><img src="images/workout.jpg" alt=""></a>
+                        <div class="overlay"></div>
+                        <a href=""><p>Workout</p></a>
+                    </div>
+                    <div class="music-type round">
+                        <a href=""><img src="images/rock.jpg" alt=""></a>
+                        <div class="overlay"></div>
+                        <a href=""><p>Rock</p></a>
+                    </div>
+                    <div class="music-type round">
+                        <a href=""><img src="images/pop.jpg" alt=""></a>
+                        <div class="overlay"></div>
+                        <a href=""><p>Pop</p></a>
+                    </div>
+                </div>
+
+                <!-- music genre -->
+
+                <div class="music-genre-container">
+                    <div class="music-genre">
+                        <a href=""><img src="images/party.jpg" alt=""></a>
+                        <a href=""><p>Party</p></a>
+
+                    </div>
+                    <div class="music-genre">
+                        <a href=""><img src="images/electronic.jpg" alt=""></a>
+                        <a href=""><p>Electronic</p></a>
+                        
+                    </div>
+                    <div class="music-genre">
+                        <a href=""><img src="images/roadtrip.jpg" alt=""></a>
+                        <a href=""><p>Road Trip</p></a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- latest english -->
+            <div class="latest-english-container">
+                <h3 class="section-heading">Latest English</h3>
+                <div class="latest-english">
+                    <div class="song-container">
+                        <a href=""><img src="images/album-cover5.jpg" alt=""></a>
+                        <a href=""><p class="bold">Come Back In</p></a>
+                        <p>AUG 11, 2017</p>
+                    </div>
+                    <div class="song-container">
+                        <a href=""><img src="images/album-cover2.jpg" alt=""></a>
+                        <a href=""><p class="bold">Believer</p></a>
+                        <p>AUG 11, 2017</p>
+                    </div>
+                    <div class="song-container">
+                        <a href=""><img src="images/album-cover3.jpg" alt=""></a>
+                        <a href=""><p class="bold">Nostalghia</p></a>
+                        <p>AUG 11, 2017</p>
+                    </div>
+                    <div class="song-container">
+                        <a href=""><img src="images/album-cover4.jpg" alt=""></a>
+                        <a href=""><p class="bold">Los Angeles</p></a>
+                        <p>AUG 11, 2017</p>
+                    </div>
+                    <div class="song-container">
+                        <a href=""><img src="images/album-cover5.jpg" alt=""></a>
+                        <a href=""><p class="bold">I Remember</p></a>
+                        <p>AUG 11, 2017</p>
+                    </div>
+                    <div class="song-container">
+                        <a href=""><img src="images/album-cover1.jpg" alt=""></a>
+                        <a href=""><p class="bold">Way Too High</p></a>
+                        <p>AUG 11, 2017</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- latest hindi -->
+
+            <div class="latest-english-container">
+                    <h3 class="section-heading">Latest Hindi</h3>
+                    <div class="latest-english">
+                        <div class="song-container">
+                            <a href=""><img src="latest-hindi/kinna-sona.jpg" alt=""></a>
+                            <a href=""><p class="bold">Kinna Sona</p></a>
+                            <p>AUG 11, 2017</p>
+                        </div>
+                        <div class="song-container">
+                            <a href=""><img src="latest-hindi/ajnabee.jpg" alt=""></a>
+                            <a href=""><p class="bold">Ajnabee</p></a>
+                            <p>AUG 11, 2017</p>
+                        </div>
+                        <div class="song-container">
+                            <a href=""><img src="latest-hindi/dim-dim-light.jpg" alt=""></a>
+                            <a href=""><p class="bold">Dim Dim Light</p></a>
+                            <p>AUG 11, 2017</p>
+                        </div>
+                        <div class="song-container">
+                            <a href=""><img src="latest-hindi/thodi-jagah.jpg" alt=""></a>
+                            <a href=""><p class="bold">Thodi Jagah</p></a>
+                            <p>AUG 11, 2017</p>
+                        </div>
+                        <div class="song-container">
+                            <a href=""><img src="latest-hindi/hawa-banke.jpg" alt=""></a>
+                            <a href=""><p class="bold">Hawa Banke</p></a>
+                            <p>AUG 11, 2017</p>
+                        </div>
+                        <div class="song-container">
+                            <a href=""><img src="latest-hindi/nai-jana.jpg" alt=""></a>
+                            <a href=""><p class="bold">Nai Jaana</p></a>
+                            <p>AUG 11, 2017</p>
+                        </div>
+                    </div>
+                </div>
+        </main>
+
+        
+        <input id="aside-toggle" type="checkbox">
+        <label class="show-aside-toggle" for="aside-toggle">Show Queue</label>
+
+        <aside class="aside">
+            
+            <div class="aside-top">
+                <div><h3>My Playlist</h3></div>
+                <div class="dropdown">
+                    <input type="checkbox" id='aside-checkbox'>
+                    <label for="aside-checkbox">Queue <i class="fas fa-sort-down"></i></label>
+                    <div class="playlist-dropdown">
+                        <p>Playlist</p>
+                        <div class="hr-line"></div>
+                        <p>Favourite Songs</p>
+                    </div>
+                </div>
+            </div>
+            <div class="queue-song-container">
+                <div class="queue-song-container-item fromBottom1000">
+                    <div>
+                    <p>01</p>
+                    </div>
+                    <div class="queue-song-image">
+                        <img src="images/albumart1.jpg" alt="">
+                    </div>
+                    <div class="queue-song-info">
+                        <p>Plastic Heart</p>
+                        <p>Nostalghia</p>
+                    </div>
+                    <div class="heart-icon">
+                        <i class="far fa-heart heart-icon"></i>
+                    </div>
+                </div>
+                <div class="queue-song-container-item fromBottom1000">
+                    <div>
+                    <p>02</p>
+                    </div>
+                    <div class="queue-song-image">
+                        <img src="images/albumart2.jpg" alt="">
+                    </div>
+                    <div class="queue-song-info">
+                        <p>Fireflies</p>
+                        <p>Owl City</p>
+                    </div>
+                    <div class="heart-icon">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="queue-song-container-item fromBottom500">
+                    <div>
+                    <p>03</p>
+                    </div>
+                    <div class="queue-song-image">
+                        <img src="images/albumart3.jpg" alt="">
+                    </div>
+                    <div class="queue-song-info">
+                        <p>Los Angeles</p>
+                        <p>Midnight</p>
+                    </div>
+                    <div class="heart-icon">
+                        <i class="far fa-heart heart-icon"></i>
+                    </div>
+                </div>
+                <div class="queue-song-container-item fromBottom500">
+                    <div>
+                    <p>04</p>
+                    </div>
+                    <div class="queue-song-image">
+                        <img src="images/albumart4.jpg" alt="">
+                    </div>
+                    <div class="queue-song-info">
+                        <p>Sunset</p>
+                        <p>Midnight</p>
+                    </div>
+                    <div class="heart-icon">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="queue-song-container-item fromBottom250">
+                    <div>
+                    <p>05</p>
+                    </div>
+                    <div class="queue-song-image">
+                        <img src="images/albumart5.jpg" alt="">
+                    </div>
+                    <div class="queue-song-info">
+                        <p>Believer</p>
+                        <p>Imagine Dragons</p>
+                    </div>
+                    <div class="heart-icon">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="queue-song-container-item fromBottom250">
+                    <div>
+                    <p>06</p>
+                    </div>
+                    <div class="queue-song-image">
+                        <img src="images/albumart1.jpg" alt="">
+                    </div>
+                    <div class="queue-song-info">
+                        <p>Old Man</p>
+                        <p>Neil Young</p>
+                    </div>
+                    <div class="heart-icon">
+                        <i class="far fa-heart heart-icon"></i>
+                    </div>
+                </div>
+                <div class="queue-song-container-item fromBottom250">
+                    <div>
+                    <p>07</p>
+                    </div>
+                    <div class="queue-song-image">
+                        <img src="images/albumart2.jpg" alt="">
+                    </div>
+                    <div class="queue-song-info">
+                        <p>Bone Dry</p>
+                        <p>Tristam</p>
+                    </div>
+                    <div class="heart-icon">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="queue-song-container-item">
+                    <div>
+                    <p>08</p>
+                    </div>
+                    <div class="queue-song-image">
+                        <img src="images/albumart3.jpg" alt="">
+                    </div>
+                    <div class="queue-song-info">
+                        <p>Hurts So Good</p>
+                        <p>Astrid S</p>
+                    </div>
+                    <div class="heart-icon">
+                        <i class="far fa-heart heart-icon"></i>
+                    </div>
+                </div>
+                <div class="queue-song-container-item">
+                    <div>
+                    <p>09</p>
+                    </div>
+                    <div class="queue-song-image">
+                        <img src="images/albumart4.jpg" alt="">
+                    </div>
+                    <div class="queue-song-info">
+                        <p>Boy With Luv</p>
+                        <p>BTS</p>
+                    </div>
+                    <div class="heart-icon">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="queue-song-container-item">
+                    <div>
+                    <p>10</p>
+                    </div>
+                    <div class="queue-song-image">
+                        <img src="images/albumart5.jpg" alt="">
+                    </div>
+                    <div class="queue-song-info">
+                        <p>The Dragonblade</p>
+                        <p>Nerd Out</p>
+                    </div>
+                    <div class="heart-icon">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="queue-song-container-item fromBottom1000">
+                    <div>
+                    <p>11</p>
+                    </div>
+                    <div class="queue-song-image">
+                        <img src="images/albumart1.jpg" alt="">
+                    </div>
+                    <div class="queue-song-info">
+                        <p>Mirage</p>
+                        <p>Else</p>
+                    </div>
+                    <div class="heart-icon">
+                        <i class="far fa-heart heart-icon"></i>
+                    </div>
+                </div>
+                <div class="queue-song-container-item fromBottom1000">
+                    <div>
+                    <p>12</p>
+                    </div>
+                    <div class="queue-song-image">
+                        <img src="images/albumart2.jpg" alt="">
+                    </div>
+                    <div class="queue-song-info">
+                        <p>Fireflies</p>
+                        <p>Owl City</p>
+                    </div>
+                    <div class="heart-icon">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="queue-song-container-item fromBottom500">
+                    <div>
+                    <p>13</p>
+                    </div>
+                    <div class="queue-song-image">
+                        <img src="images/albumart3.jpg" alt="">
+                    </div>
+                    <div class="queue-song-info">
+                        <p>Los Angeles</p>
+                        <p>Midnight</p>
+                    </div>
+                    <div class="heart-icon">
+                        <i class="far fa-heart heart-icon"></i>
+                    </div>
+                </div>
+                <div class="queue-song-container-item fromBottom500">
+                    <div>
+                    <p>14</p>
+                    </div>
+                    <div class="queue-song-image">
+                        <img src="images/albumart4.jpg" alt="">
+                    </div>
+                    <div class="queue-song-info">
+                        <p>Sunset</p>
+                        <p>Midnight</p>
+                    </div>
+                    <div class="heart-icon">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+                <div class="queue-song-container-item fromBottom250">
+                    <div>
+                    <p>15</p>
+                    </div>
+                    <div class="queue-song-image">
+                        <img src="images/albumart5.jpg" alt="">
+                    </div>
+                    <div class="queue-song-info">
+                        <p>Believer</p>
+                        <p>Imagine Dragons</p>
+                    </div>
+                    <div class="heart-icon">
+                        <i class="far fa-heart"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </aside>
+
+        <!-- footer -->
+        <footer id="footer">
+            <div class="footer-image">
+                <div>
+                    <img src="images/album-cover5.jpg" alt="">
+                </div>
+                <div class="footer-image-text">
+                    <p>Imagine by John</p>
+                    <p>John Lennon</p>
+                </div>
+                <div class="footer-image-icons">
+                    <i class="far fa-heart"></i>
+                    <i class="fas fa-ban"></i>
+                </div>
+            </div>
+            <div class="footer-slider">
+                <div class="footer-slider-controls">
+                    <i class="fas fa-random"></i>
+                    <i class="fas fa-step-backward"></i>
+                    <i class="fas fa-pause"></i>
+                    <i class="fas fa-step-forward"></i>
+                    <i class="fas fa-redo-alt"></i>
+                </div>
+                <div class="footer-slider-sliderbar">
+                    <p>1:39</p>
+                    <input type="range">
+                    <p>4:44</p>
+                </div>
+            </div>
+            <div class="footer-volume">
+                <i class="fas fa-stream"></i>
+                <i class="fas fa-mobile-alt"></i>
+                <i class="fas fa-volume-up"></i>
+                <div>
+                   <input type="range"> 
+                </div>
+                <i class="fas fa-arrows-alt-h"></i>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
