@@ -5,20 +5,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Ninja Studio</title>
-    <!-- <script src="https://kit.fontawesome.com/3e3496df42.js" crossorigin="anonymous"></script> -->
-    <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
-    <link rel="stylesheet" href="animations.css">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet"> <!-- google fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" /> <!-- font awesome -->
+    <link rel="stylesheet" href="animations.css"> <!-- separate stylesheet for animations-->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+
+    <input type="checkbox" name="" id="theme-selector">
+    <label for="theme-selector"></label>
+
     <div class="nav-container">
     <nav>
         <div class="logo-container">
             <a href=""><img src="images/logo2.png" alt=""></a>
         </div>   
-        <div class="flex-2">
-            <P>Favourite</P>
+        <div class="flex-2"> <!-- to expand this portion -->
+            <a href=""><P>Favourites</P></a>
         </div>
         <div class="search-box-container">
             <input class="search-box" type="text">
@@ -28,7 +31,7 @@
         </div>
         <div class="notification-bell">
                 <i class="fas fa-bell fa-lg"></i>
-                <div class="red-circle"></div>
+                <div class="red-circle"></div>  <!-- to make a red circle right beside the bell icon -->
         </div>
         <div class="my-photo">
             <img src="images/myphoto.jpg" alt="">
@@ -36,9 +39,11 @@
         </div>
     </nav>
     </div>
-    <div class="fixed-position-filler"></div>
-    <div class="container">
-        <main>
+    <div class="fixed-position-filler"></div>  <!-- adding this filler div as i have set the nav bar as position fixed -->
+    <div class="container"> <!-- conttainer for main and aside section -->
+
+        <main> 
+
                 <!-- carousel container -->
             <div class="carousel-container">
                 <div class="image-container carousel1 slideIn">
@@ -51,6 +56,7 @@
                     <a href=""><img src="images/hero-image1.jpg" alt=""></a>
                 </div>
             </div>
+
                 <!-- latest release -->
             <div class="latest-release-container">
                 <div>
@@ -66,14 +72,14 @@
                             <a href=""><p>Los Angeles</p></a>
                             <p>AUG 11 2017</p>
                         </div>
-                        <div class="release-dropdown">
+                        <div class="release-dropdown">  <!-- this div contains the dropdown menu which uses a checkbox to show/hide the dropwdown options-->
                             <input type="checkbox" id="release-checkbox">
                             <label for="release-checkbox">&bull; &bull; &bull;</label>
                             <p>4:44</p>
                             <div class="latest-release-dropdown">
                                 <div class="drop-menu">
                                     <i class="fas fa-play"></i>
-                                    <p>PLay</p>
+                                    <p>Play</p>
                                 </div>
                                 <div class="hr-line"></div>
                                 <div class="drop-menu">
@@ -109,7 +115,7 @@
                             <div class="latest-release-dropdown">
                                 <div class="drop-menu">
                                     <i class="fas fa-play"></i>
-                                    <p>PLay</p>
+                                    <p>Play</p>
                                 </div>
                                 <div class="hr-line"></div>
                                 <div class="drop-menu">
@@ -145,7 +151,7 @@
                             <div class="latest-release-dropdown">
                                 <div class="drop-menu">
                                     <i class="fas fa-play"></i>
-                                    <p>PLay</p>
+                                    <p>Play</p>
                                 </div>
                                 <div class="hr-line"></div>
                                 <div class="drop-menu">
@@ -181,7 +187,7 @@
                             <div class="latest-release-dropdown">
                                 <div class="drop-menu">
                                     <i class="fas fa-play"></i>
-                                    <p>PLay</p>
+                                    <p>Play</p>
                                 </div>
                                 <div class="hr-line"></div>
                                 <div class="drop-menu">
@@ -203,6 +209,7 @@
                     </div>
                 </div>
             </div>
+
             <!-- popular artist section -->
             <div class="popular-artist-container">
                 <div>
@@ -254,10 +261,10 @@
                 </div>
 
                 <!-- music type -->
-
                 <div class="music-type-container">
-                    <div class="music-type">
+                    <div class="music-type">   <!-- this div is for making that stations logo -->
                         <div class="stations">
+                            <!-- having 3 divs appear on top of each other with different height and width and color -->
                             <div class="pos3"></div>
                             <div class="pos2"></div>
                             <div class="pos1">
@@ -269,37 +276,30 @@
                     <div class="music-type round">
                         <a href=""><img src="images/love.jpg" alt=""></a>
                         <a href=""><p>Love</p></a>
-                        <div class="overlay"></div>
                     </div>
                     <div class="music-type round">
                         <a href=""><img src="images/retro.jpg" alt=""></a>
-                        <div class="overlay"></div>
                         <a href=""><p>Retro</p></a>
                     </div>
                     <div class="music-type round">
                         <a href=""><img src="images/chill.jpg" alt=""></a>
-                        <div class="overlay"></div>
                         <a href=""><p>Chill</p></a>
                     </div>
                     <div class="music-type round">
                         <a href=""><img src="images/workout.jpg" alt=""></a>
-                        <div class="overlay"></div>
                         <a href=""><p>Workout</p></a>
                     </div>
                     <div class="music-type round">
                         <a href=""><img src="images/rock.jpg" alt=""></a>
-                        <div class="overlay"></div>
                         <a href=""><p>Rock</p></a>
                     </div>
                     <div class="music-type round">
                         <a href=""><img src="images/pop.jpg" alt=""></a>
-                        <div class="overlay"></div>
                         <a href=""><p>Pop</p></a>
                     </div>
                 </div>
 
                 <!-- music genre -->
-
                 <div class="music-genre-container">
                     <div class="music-genre">
                         <a href=""><img src="images/party.jpg" alt=""></a>
@@ -355,7 +355,7 @@
                 </div>
             </div>
 
-            <!-- latest hindi -->
+            <!-- latest hindi  (contains everything from the latest english container)-->
 
             <div class="latest-english-container">
                     <h3 class="section-heading">Latest Hindi</h3>
@@ -394,7 +394,7 @@
                 </div>
         </main>
 
-        
+        <!-- this label only shows up when reducing the screen size and it controls the aside section on toggle of the checkbox-->
         <input id="aside-toggle" type="checkbox">
         <label class="show-aside-toggle" for="aside-toggle">Show Queue</label>
 
@@ -402,8 +402,8 @@
             
             <div class="aside-top">
                 <div><h3>My Playlist</h3></div>
-                <div class="dropdown">
-                    <input type="checkbox" id='aside-checkbox'>
+                <div class="dropdown"> 
+                    <input type="checkbox" id='aside-checkbox'>  <!-- using checkbox to show and hide playslist dropdown div-->
                     <label for="aside-checkbox">Queue <i class="fas fa-sort-down"></i></label>
                     <div class="playlist-dropdown">
                         <p>Playlist</p>
@@ -644,7 +644,7 @@
 
         <!-- footer -->
         <footer id="footer">
-            <div class="footer-image">
+            <div class="footer-image"> <!-- this div contains the image and name of the song-->
                 <div>
                     <img src="images/album-cover5.jpg" alt="">
                 </div>
@@ -657,7 +657,7 @@
                     <i class="fas fa-ban"></i>
                 </div>
             </div>
-            <div class="footer-slider">
+            <div class="footer-slider"> <!-- contains the playback slider and controls -->
                 <div class="footer-slider-controls">
                     <i class="fas fa-random"></i>
                     <i class="fas fa-step-backward"></i>
@@ -671,7 +671,7 @@
                     <p>4:44</p>
                 </div>
             </div>
-            <div class="footer-volume">
+            <div class="footer-volume"> <!-- contains the volume slider and other controls-->
                 <i class="fas fa-stream"></i>
                 <i class="fas fa-mobile-alt"></i>
                 <i class="fas fa-volume-up"></i>

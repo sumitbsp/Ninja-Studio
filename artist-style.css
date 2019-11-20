@@ -1,3 +1,11 @@
+/* css variables*/
+:root {
+    --main-color: #0C1027;
+    --secondary-color: #141B41;
+    --text-color:#C5C3C3;
+    --text-color-secondary: #fff;
+}
+
 /* body */
 *{
     margin: 0;
@@ -19,11 +27,11 @@ body{
     margin: 0;
     padding: 0;
     font-family: sans-serif;
-    background-color:#0C1027;
+    background-color:var(--main-color);
     color: white;
 }
 img{
-border-radius: 2%;
+border-radius: 2%; /* adding border radius to all images. Using % for responsiveness*/
 }
 
 /* -------------------Nav-------------------- */
@@ -37,18 +45,11 @@ border-radius: 2%;
     width: 100%;
     z-index: 2;
     height: 90px;
-    background-color: #0C1027;
+    background-color: var(--main-color);
     overflow: hidden ;
 }
 
-.menu {
-    /* display: none; */
-}
-
-
-
 nav {
-    /* overflow: hidden; */
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -56,14 +57,13 @@ nav {
     height: 90px;
     margin: 0 auto;
     align-items: center;
-    /* top: 10px; */
     z-index: 2;
-    background-color: #0C1027;
+    background-color: var(--main-color);
     overflow: hidden;
 }
 
 nav>div {
-    margin: 0 20px;
+    margin: 0 20px; /* adding 20px right and left margin to all the direct child divs of the nav*/
 }
 
 .logo-container {
@@ -73,13 +73,13 @@ nav>div {
 .logo-container img{
     width: 160px;
 }
-.flex-2 {
+.flex-2 { /* to make the the particular element larger than the others*/
     flex: 2;
     text-align: center;
 }
 
 .search-box-container {
-    position: relative;
+    position: relative;  /* used pos relative here to have the search and mic icons over the search box*/
 }
 
 .search-box-search {
@@ -105,7 +105,7 @@ nav>div {
 }
 
 .search-box{
-    background-color: #12193E;
+    background-color: var(--secondary-color);
     border: 0;
     height: 1.8rem;
     width: 300px;
@@ -129,7 +129,7 @@ nav>div {
     animation: shake 4s infinite 3s;
 }
 
-@keyframes shake {
+@keyframes shake { /* this animation is written in a way to make it work look it happens every 3 secs but is happeining continously*/
     0%{
         transform: rotate(0deg);
     }
@@ -166,7 +166,7 @@ nav>div {
 }
 
 
-.red-circle{
+.red-circle{ /* the small red cirle beside the bell icon*/ 
     position: absolute;
     width: 6px;
     height: 6px;
@@ -177,6 +177,14 @@ nav>div {
    
 }
 
+.fixed-position-filler {  /* this div is created to fill the gap made by nav when setting it to fixed position*/
+    width: 100%;
+    z-index: 2;
+    height: 90px;
+    background-color: var(--main-color);
+    overflow: hidden ;
+}
+
 /* ------------------container-------------- */
 .container {
     width: 85%;
@@ -185,28 +193,25 @@ nav>div {
     justify-content: space-between;
     position: relative;
     flex-wrap: wrap;
-
-    /* justify-content: space-between; */
 }
 
 /* -------------main----------- */
 
 main {
     width: 70%;
-    height: 79vh;
+    height: 79vh; 
     margin: auto;
     position: absolute;
     overflow-y: scroll;
 }
+
 main::-webkit-scrollbar { 
-    width: 0 !important }
+    width: 0 !important } /* to hide the scrollbar while keeping the functionality */
 
 .artist-container{
     width: 100%;
-    height: px;
     display: flex;
-    /* flex-wrap: wrap; */
-    background-color: #141B41;
+    background-color: var(--secondary-color);
 }
 
 .artist-image{
@@ -218,9 +223,10 @@ main::-webkit-scrollbar {
     align-items: center;
     overflow: hidden
 }
+
 .artist-image img{
     width: 100%;
-    border-radius: 0;
+    border-radius: 0; /* clearing out the global border radius set for all image tags */
 }
 
 .artist-info{
@@ -239,27 +245,22 @@ main::-webkit-scrollbar {
     margin-bottom: 10px;
 }
 .artist-info p {
-    color: #C5C3C3;
+    color: var(--text-color);
 }
 .artist-info::after { /* adding the follower count */
     content: '851 Followers';
     position: absolute;
     top: 10%;
     right: 10%;
-    color: #C5C3C3;
+    color: var(--text-color);
     font-size: 0.75rem;
 }
 
-
-.main-info, .action-buttons {
-    margin: px;
-}
 .main-info {
     font-size: 0.9rem;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-    /* height: 50%; */
 }
 
 .action-buttons {
@@ -270,11 +271,11 @@ main::-webkit-scrollbar {
     height: 50%;
     position: relative;
 }
-.action-buttons button {
+.action-buttons button { /* styling the follow button*/
     width: 30%;
     height: 40px;
     background: linear-gradient(to right, #3524AF, #C248DF);
-    color: white;
+    color: var(--text-color-secondary);
     border: 0;
     font-weight: 500;
     font-size: 1.1rem;
@@ -290,7 +291,7 @@ main::-webkit-scrollbar {
     top: 20%;
     right: 40%;
     font-size: 1.1rem;
-    color: white;
+    color: var(--text-color-secondary);
     animation: slideIn 1s;
 }
 /*---------*/
@@ -305,32 +306,31 @@ main::-webkit-scrollbar {
     flex-direction: column;
 }
 
-.song-list-item {
+.song-list-item {  /* individual item in the song list div*/
     margin: 5px 0;
     width: 100%;
     display: flex;
     flex-wrap: wrap;
-    flex-wrap: wrap;
     justify-content: space-evenly;
     padding: 10px 0;
-    background-color: #1A1E33;
+    background-color: var(--secondary-color);
     align-items: center;
-    color: #C5C3C3;
+    color: var(--text-color);
 }
-.song-list-item img{
+.song-list-item img{  /* image of the song*/
     width: 40px;
     height: 40px;
-    border: 1px solid #C5C3C3;
-    box-shadow: 0px 0px 5px #C5C3C3;
+    border: 1px solid var(--text-color);
+    box-shadow: 0px 0px 5px var(--text-color);
 }
 .song-list-item-info{ /* to have extra space between song info and heart icon*/
     width: 70%;
 }
 .song-list-item-info :nth-child(1){
-    color: white;
+    color: var(--text-color-secondary);  /* to make the song title white color*/
 }
 .song-list-item-info :nth-child(2){
-    font-size: 0.85rem;
+    font-size: 0.85rem;  /* to make to singer name smaller than the title*/
 }
 
 
@@ -344,7 +344,7 @@ aside {
     overflow-y: scroll;
 }
 aside::-webkit-scrollbar { 
-    width: 0 !important }
+    width: 0 !important }  /* to hide the scrollbar */
 
 /* -----------------similar artist---------------- */
 .similar-artist {
@@ -355,7 +355,7 @@ aside::-webkit-scrollbar {
 }
 
 .similar-artist-heading {
-    background-color: #0C1027;
+    background-color: var(--main-color);
     width: 100%;
     display: flex;
     align-items: center;
@@ -364,10 +364,10 @@ aside::-webkit-scrollbar {
     animation: enlarge 1s;
 }
 .similar-artist-heading h3{
-    font-size: 1.15rem;
+    font-size: 1.15rem;  /* making the headings a bit bigger*/
 }
 .similar-artist-heading p{
-    color: #C5C3C3;
+    color: var(--text-color);
     font-size: 0.75rem;
 }
 
@@ -376,27 +376,27 @@ aside::-webkit-scrollbar {
     width: 100%;
     justify-content: space-between;
     align-items: center;
-    color: #C5C3C3;
+    color: var(--text-color);
     font-size: 0.75rem;
-    margin-bottom: 10px;
+    margin-bottom: 10px;  /* adding margin between all the items*/
 }
 
 .similar-artist-image{
-    flex-shrink: 0;
+    flex-shrink: 0;  /* adding shrink value 0 so that the images dont shrink in smaller screens*/
     width: 85px;
 }
 .similar-artist-image img{
     width: 100%;
-    border: 1px solid #C5C3C3;
-    box-shadow: 0px 0px 5px #C5C3C3;
+    border: 1px solid var(--text-color);  /* border for the images*/
+    box-shadow: 0px 0px 5px var(--text-color);  /* shadow for the images*/
 }
 
 .similar-artist-info{
-    width: 60%;
+    width: 60%;  /* width is explicitely added on this div to have it occupy the most space out of all*/
     margin-left: 7%;
 }
-.similar-artist-info :nth-child(1){
-    color: white;
+.similar-artist-info :nth-child(1){  /* styling the artist name*/
+    color: var(--text-color-secondary);
     font-size: 0.85rem;
     margin-bottom: 3%;
 }
@@ -409,7 +409,7 @@ aside::-webkit-scrollbar {
     margin-top: 1%;
     font-size: 0.7rem;
 }
-.similar-artist-dropdown :nth-child(1){
+.similar-artist-dropdown :nth-child(1){  /* styling the 3 dots of the drpdown menu*/
     font-size: 0.75rem;
     text-align: center;
     word-spacing: 0.2px;
@@ -429,12 +429,12 @@ aside::-webkit-scrollbar {
 
 footer {
     position: fixed;
-    bottom: 0;
+    bottom: 0;  /* bottom is set to 0 so that it appears from the bottom side*/
     left: 0;
     height: 55px;
     width: 100%;
     background-color: #282828;
-    color: #C5C3C3;
+    color: var(--text-color);
     font-size: 0.8rem;
     z-index: 2;
     display: flex;
@@ -454,9 +454,9 @@ footer {
     width: 45px;
     margin-top: 4px;
 }
-.footer-image-text :nth-child(1){
+.footer-image-text :nth-child(1){  /* styling the name of the song*/
     font-size: 0.9rem;
-    color: white;
+    color: var(--text-color-secondary);
     margin-bottom: 3px;
 }
 .footer-image-icons{
@@ -484,7 +484,7 @@ footer {
     padding-top: 3px;
     font-size: 0.9rem;
 }
-.footer-slider-controls :nth-child(3) {
+.footer-slider-controls :nth-child(3) {  /* making this icon position relative to add that circle on top of it*/
     position: relative;
 }
 .footer-slider-controls :nth-child(3)::after{ /*adding the round shape on pause icon*/
@@ -505,7 +505,7 @@ footer {
     align-items: center;
 }
 
-/* input range */
+/* playback slider */
 input[type=range] {
   height: 19px;
   -webkit-appearance: none;
@@ -538,9 +538,7 @@ input[type=range]::-webkit-slider-thumb {
   margin-top: -4.5px;
 }
 
-
 /* footer volume controls section */
-
 .footer-volume{
     width: 17%;
     display: flex;
@@ -557,8 +555,8 @@ input[type=range]::-webkit-slider-thumb {
     transform: rotate(-45deg);
 }
 
-/* page load animations */
 
+/* page load animations */
 .fromBottom1000 {
     animation: fromBottom1 .75s;
 }
@@ -612,7 +610,7 @@ input[type=range]::-webkit-slider-thumb {
     animation: fromLeft .75s;
 }
 
-/* ---------media queries */
+/* ---------media queries------------------ */
 
 @media screen and (max-width: 900px) {
     .fixed-position-filler {
@@ -623,18 +621,15 @@ input[type=range]::-webkit-slider-thumb {
         height: 140px;
     }
     .flex-2{
-        flex: 1;
+        flex: 1;  /* removing the extra width provided to the element*/
         flex-shrink: 2;
     }
 
     main {
-        width: 65%;
+        width: 65%;  /* increasing the width of main and aside section*/
     }
     aside {
         width: 30%;
-    }
-    .notification-bell{
-        /* display: none; */
     }
 
     .artist-container{
@@ -667,12 +662,12 @@ input[type=range]::-webkit-slider-thumb {
         top: 530px;
     }
 
-    /* fotter */
+    /* footer */
     .footer-image{
         width: 28%;
     }
-    .footer-image-icons{
-        flex-direction: column;
+    .footer-image-icons{  
+        flex-direction: column;  /* changin the flex direction of the icons to column*/
         justify-content: space-around;
         height: 80%;
         margin-bottom: 0;

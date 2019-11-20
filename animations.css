@@ -1,5 +1,6 @@
+/* animations */
 
-@keyframes comein {
+@keyframes comein { 
     from{
         transform: translate(-1000px, -1000px);
        

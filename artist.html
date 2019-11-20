@@ -7,9 +7,9 @@
     <title>Selena Gomez</title>
     
     <link rel="stylesheet" href="animations.css">
-    <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" />
-    <link rel="stylesheet" href="artist-style.css">
+    <link href="https://fonts.googleapis.com/css?family=Varela+Round&display=swap" rel="stylesheet"> <!-- google fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css" integrity="sha256-+N4/V/SbAFiW1MPBCXnfnP9QSN3+Keu+NlB+0ev/YKQ=" crossorigin="anonymous" /> <!-- font awesome -->
+    <link rel="stylesheet" href="artist-style.css"> <!-- separate stylesheet for animations-->
 </head>
 <body>
     <div class="nav-container">       
@@ -17,7 +17,7 @@
         <div class="logo-container">
             <a href="index.html"><img src="images/logo2.png" alt=""></a>
         </div>   
-        <div class="flex-2">
+        <div class="flex-2"> <!-- to expand this portion -->
             <P>Favourite</P>
         </div>
         <div class="search-box-container">
@@ -28,7 +28,7 @@
         </div>
         <div class="notification-bell">
                 <i class="fas fa-bell fa-lg"></i>
-                <div class="red-circle"></div>
+                <div class="red-circle"></div>  <!-- to make a red circle right beside the bell icon -->
         </div>
         <div class="my-photo">
             <img src="images/myphoto.jpg" alt="">
@@ -36,14 +36,16 @@
         </div>
     </nav>
     </div>
-    <div class="fixed-position-filler"></div>
-    <div class="container">
+    <div class="fixed-position-filler"></div> <!-- adding this filler div as i have set the nav bar as position fixed -->
+
+    <div class="container"> <!-- conttainer for main and aside section -->
+
         <main>
             <div class="artist-container">
                 <div class="artist-image">
                     <img src="images/selena-gomez.jpg" alt="">
                 </div>
-                <div class="artist-info">
+                <div class="artist-info"> <!-- contains the image and info about artist-->
                     <div class="main-info">
                         <h3>Selena Gomez</h3>
                         <p class="name">Solo Artist</p>
@@ -56,7 +58,7 @@
                     </div>
                 </div>
             </div>
-            <div class="song-list">
+            <div class="song-list"> <!-- contains all the songs of the artist-->
                 <div class="song-list-item slideIn">
                     <div>01</div>
                     <div>
@@ -371,8 +373,9 @@
                 </div>
             </div>
         </aside>
+        
         <footer id="footer">
-            <div class="footer-image">
+            <div class="footer-image"> <!-- this div contains the image and name of the song-->
                 <div>
                     <img src="images/album-cover5.jpg" alt="">
                 </div>
@@ -385,7 +388,7 @@
                     <i class="fas fa-ban"></i>
                 </div>
             </div>
-            <div class="footer-slider">
+            <div class="footer-slider"> <!-- contains the playback slider and controls -->
                 <div class="footer-slider-controls">
                     <i class="fas fa-random"></i>
                     <i class="fas fa-step-backward"></i>
@@ -399,7 +402,7 @@
                     <p>4:44</p>
                 </div>
             </div>
-            <div class="footer-volume">
+            <div class="footer-volume"> <!-- contains the volume slider and other controls-->
                 <i class="fas fa-stream"></i>
                 <i class="fas fa-mobile-alt"></i>
                 <i class="fas fa-volume-up"></i>
